@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+a.btn {
+    background: #2563eb;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+a.btn:hover {
+    background: #1e40af;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    padding: 8px;
+    background: #f9fafb;
+    border-bottom: 1px solid #ddd;
+}
+
+.action a {
+    margin-right: 8px;
+    color: #2563eb;
+}
+
+form input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}

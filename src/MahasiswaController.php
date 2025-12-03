@@ -1,5 +1,3 @@
-HEAD
-
 <?php
 
 class MahasiswaController {
@@ -28,5 +26,10 @@ class MahasiswaController {
     public function update($id, $data) {
         return $this->repo->update($id, $data);
     }
+
+    // Menghapus data mahasiswa berdasarkan ID
+    public function delete($id) {
+        return $this->repo->delete($id);
+    }
 }
-8eebe1e (proses menampilkan 1 mahasiswa berdasrkan ID)
+
