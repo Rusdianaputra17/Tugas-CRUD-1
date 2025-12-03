@@ -88,6 +88,19 @@ class MahasiswaRepository {
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+<<<<<<< HEAD
 >>>>>>> cc145dc (mengambil semua data mahasiswa)
+<<<<<<< HEAD
 >>>>>>> 481a560 (mengambil semua data mahasiswa)
+=======
+=======
+
+    // Mengambil data mahasiswa berdasarkan ID
+    public function getById($id) {
+        $stmt = $this->conn->prepare("SELECT * FROM mahasiswa WHERE id = ?");
+        $stmt->execute([$id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+>>>>>>> 622a03b (mengambil data mahasiswa berdasarkan ID)
+>>>>>>> bfb1f13 (mengambil data mahasiswa berdasarkan ID)
 }
