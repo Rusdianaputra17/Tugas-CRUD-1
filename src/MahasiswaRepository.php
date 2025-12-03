@@ -101,6 +101,28 @@ class MahasiswaRepository {
         $stmt->execute([$id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+<<<<<<< HEAD
 >>>>>>> 622a03b (mengambil data mahasiswa berdasarkan ID)
+<<<<<<< HEAD
 >>>>>>> bfb1f13 (mengambil data mahasiswa berdasarkan ID)
+=======
+=======
+
+     // Menambah mahasiswa baru
+    public function create($data) {
+        $stmt = $this->conn->prepare(
+            "INSERT INTO mahasiswa (nama, nim, prodi, angkatan, status) 
+             VALUES (?, ?, ?, ?, ?)"
+        );
+
+        return $stmt->execute([
+            $data['nama'],
+            $data['nim'],
+            $data['prodi'],
+            $data['angkatan'],
+            $data['status']
+        ]);
+    }
+>>>>>>> 5b8d787 (menambahkan data mahasiswa baru)
+>>>>>>> fa9b761 (menambahkan data mahasiswa baru)
 }
