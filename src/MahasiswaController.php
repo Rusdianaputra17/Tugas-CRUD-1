@@ -23,5 +23,10 @@ class MahasiswaController {
     public function store($data) {
         return $this->repo->create($data);
     }
+
+    // Memperbarui data mahasiswa
+    public function update($id, $data) {
+        return $this->repo->update($id, $data);
+    }
 }
 8eebe1e (proses menampilkan 1 mahasiswa berdasrkan ID)
