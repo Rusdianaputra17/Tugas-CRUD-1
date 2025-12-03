@@ -147,6 +147,18 @@ class MahasiswaRepository {
             $id
         ]);
     }
+<<<<<<< HEAD
 >>>>>>> af53dc7 (langkah update data mahasiswa)
+<<<<<<< HEAD
 >>>>>>> 08e1423 (langkah update data mahasiswa)
+=======
+=======
+
+    // Hapus mahasiswa
+    public function delete($id) {
+        $stmt = $this->conn->prepare("DELETE FROM mahasiswa WHERE id = ?");
+        return $stmt->execute([$id]);
+    }
+>>>>>>> c0a9806 (langkah delete data mahasiswa)
+>>>>>>> 81af4fc (langkah delete data mahasiswa)
 }
