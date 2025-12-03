@@ -18,5 +18,10 @@ class MahasiswaController {
     public function show($id) {
         return $this->repo->getById($id);
     }
+
+    // Menyimpan data mahasiswa baru
+    public function store($data) {
+        return $this->repo->create($data);
+    }
 }
 8eebe1e (proses menampilkan 1 mahasiswa berdasrkan ID)
