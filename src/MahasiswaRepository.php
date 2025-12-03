@@ -11,7 +11,10 @@ class MahasiswaRepository {
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c704169 (memperbaiki file MahasiswaRepository.php)
+=======
+>>>>>>> 481a560 (mengambil semua data mahasiswa)
 
     public function getAll() {
         $stmt = $this->conn->prepare("SELECT * FROM $this->table ORDER BY id DESC");
@@ -74,5 +77,17 @@ class MahasiswaRepository {
 >>>>>>> 8a93a0e (menambahkan fungsi delete)
 =======
 >>>>>>> 5443d5f (memperbaiki file MahasiswaRepository.php)
+<<<<<<< HEAD
 >>>>>>> c704169 (memperbaiki file MahasiswaRepository.php)
+=======
+=======
+
+    // Mengambil semua data mahasiswa
+    public function getAll() {
+        $stmt = $this->conn->prepare("SELECT * FROM mahasiswa ORDER BY id DESC");
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+>>>>>>> cc145dc (mengambil semua data mahasiswa)
+>>>>>>> 481a560 (mengambil semua data mahasiswa)
 }
