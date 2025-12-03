@@ -123,6 +123,30 @@ class MahasiswaRepository {
             $data['status']
         ]);
     }
+<<<<<<< HEAD
 >>>>>>> 5b8d787 (menambahkan data mahasiswa baru)
+<<<<<<< HEAD
 >>>>>>> fa9b761 (menambahkan data mahasiswa baru)
+=======
+=======
+
+    // Update data mahasiswa
+    public function update($id, $data) {
+        $stmt = $this->conn->prepare(
+            "UPDATE mahasiswa 
+             SET nama = ?, nim = ?, prodi = ?, angkatan = ?, status = ? 
+             WHERE id = ?"
+        );
+
+        return $stmt->execute([
+            $data['nama'],
+            $data['nim'],
+            $data['prodi'],
+            $data['angkatan'],
+            $data['status'],
+            $id
+        ]);
+    }
+>>>>>>> af53dc7 (langkah update data mahasiswa)
+>>>>>>> 08e1423 (langkah update data mahasiswa)
 }
