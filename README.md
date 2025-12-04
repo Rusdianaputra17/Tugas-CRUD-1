@@ -22,32 +22,24 @@ Entitas utama dalam aplikasi ini adalah Mahasiswa, yang memiliki beberapa atribu
     - PHP: 8.4.13 
     - Database: MySQL 
 
-       crud-mahasiswa/
-│
-├── config/
-│   └── database.php
-│
-├── src/
-│   ├── Mahasiswa.php
-│   │   
-│   │
-│   ├── MahasiswaController.php
-│   │   
-│   │
-│   └── MahasiswaRepository.php
-│       
-│
-├── public/
-│   ├── index.php       
-│   ├── create.php      
-│   ├── edit.php       
-│   ├── delete.php     
-│   └── style.css     
-│
-├── sql/
-│   └── schema.sql
-│
-└── README.md
+       crud-mahasiswa
+    
+        config
+            Database.php
+        
+        models
+            Mahasiswa.php
+            MahasiswaController.php
+            MahasiswaRepository.php
+        
+        public/
+            index.php
+            create.php
+            edit.php
+            delete.php
+            style.css
+        
+        schema.sql
    
    Penjelasan Class Utama antara lain:
    - Class Database adalah komponen yang bertugas untuk mengatur koneksi antara aplikasi PHP dengan database MySQL. Class ini sangat penting karena tanpa koneksi, aplikasi tidak dapat menjalankan operasi CRUD (Create, Read, Update, Delete).
