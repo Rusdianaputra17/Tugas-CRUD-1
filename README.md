@@ -29,14 +29,20 @@ Entitas utama dalam aplikasi ini adalah Mahasiswa, yang memiliki beberapa atribu
         
         models
             Mahasiswa.php
+
             MahasiswaController.php
+            
             MahasiswaRepository.php
         
         public/
             index.php
+
             create.php
+
             edit.php
+
             delete.php
+
             style.css
         
         schema.sql
