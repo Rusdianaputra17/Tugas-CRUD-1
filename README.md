@@ -25,16 +25,19 @@ Entitas utama dalam aplikasi ini adalah Mahasiswa, yang memiliki beberapa atribu
        crud-mahasiswa
     
         config
+
             Database.php
         
-        models
+        src/
+
             Mahasiswa.php
 
             MahasiswaController.php
-            
+
             MahasiswaRepository.php
         
         public/
+        
             index.php
 
             create.php
