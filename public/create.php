@@ -13,6 +13,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 ?>
+
+<link rel="stylesheet" href="style.css">
+
+<div class="container">
     <h2>Tambah Mahasiswa</h2>
 
     <form method="POST">
@@ -40,3 +44,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <button type="submit" class="btn">Simpan</button>
     </form>
+</div>

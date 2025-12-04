@@ -8,6 +8,10 @@ $repo = new MahasiswaRepository($db->connect());
 $controller = new MahasiswaController($repo);
 $data = $controller->index();
 ?>
+
+<link rel="stylesheet" href="style.css">
+
+<div class="container">
     <h2>Daftar Mahasiswa</h2>
 
     <a href="create.php" class="btn">+ Tambah Mahasiswa</a>
@@ -38,3 +42,4 @@ $data = $controller->index();
         </tr>
         <?php endforeach; ?>
     </table>
+</div>

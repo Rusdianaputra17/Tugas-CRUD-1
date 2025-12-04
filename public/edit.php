@@ -20,6 +20,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
 }
 ?>
+
+<link rel="stylesheet" href="style.css">
+
+<div class="container">
     <h2>Edit Data Mahasiswa</h2>
 
     <form method="POST">
@@ -48,4 +52,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <button type="submit" class="btn">Update</button>
     </form>
-
+</div>
